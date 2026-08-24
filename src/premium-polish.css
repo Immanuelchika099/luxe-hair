@@ -1,0 +1,404 @@
+/* LUXÉ premium polish — dependency-free */
+:root {
+    --luxe-pink: #F3C4CE;
+    --luxe-pink-deep: #D98FA1;
+    --luxe-ink: #171111;
+    --luxe-cream: #F9F6F0
+}
+
+.luxe-app {
+    color: var(--luxe-ink);
+    background: var(--luxe-cream);
+    -webkit-font-smoothing: antialiased
+}
+
+/* Recommended for You — natural card height */
+.luxe-app .recommend-marquee-track {
+    display: flex !important;
+    align-items: stretch !important;
+    gap: 18px !important
+}
+
+.luxe-app .recommend-card {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 0 0 clamp(230px, 24vw, 315px) !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    box-sizing: border-box !important
+}
+
+.luxe-app .recommend-media {
+    display: block !important;
+    position: relative !important;
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    aspect-ratio: .9 !important;
+    overflow: hidden !important;
+    background: #eee7df !important
+}
+
+.luxe-app .recommend-copy {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    align-items: start !important;
+    gap: 12px !important;
+    padding: 14px 2px 10px !important;
+    box-sizing: border-box !important
+}
+
+.luxe-app .recommend-copy>div {
+    min-width: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important
+}
+
+.luxe-app .recommend-copy p {
+    margin: 0 0 7px !important;
+    font: 500 8px/1.35 Inter, sans-serif !important;
+    letter-spacing: .12em !important;
+    text-transform: uppercase !important;
+    color: #8d8178 !important
+}
+
+.luxe-app .recommend-copy h3 {
+    margin: 0 0 10px !important;
+    font: 500 25px/1.02 'Cormorant Garamond', serif !important;
+    letter-spacing: -.01em !important;
+    color: #171111 !important
+}
+
+.luxe-app .recommend-copy span {
+    display: block !important;
+    margin: 0 !important;
+    font: 500 8px/1.4 Inter, sans-serif !important;
+    letter-spacing: .12em !important;
+    text-transform: uppercase !important;
+    color: #8d8178 !important
+}
+
+.luxe-app .recommend-copy strong {
+    font: 600 10px/1.2 Inter, sans-serif !important;
+    white-space: nowrap !important;
+    padding-top: 1px !important;
+    color: #171111 !important
+}
+
+.luxe-app .recommend-add {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    flex: 0 0 44px !important;
+    margin: 0 !important;
+    padding: 0 14px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 7px !important;
+    text-align: center !important;
+    line-height: 1 !important;
+    border: 1px solid rgba(23, 17, 17, .22) !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    color: #171111 !important;
+    font: 500 9px/1 Inter, sans-serif !important;
+    letter-spacing: .14em !important;
+    text-transform: uppercase !important;
+    cursor: pointer !important
+}
+
+.luxe-app .recommend-add svg {
+    display: block !important;
+    flex: 0 0 14px !important;
+    width: 14px !important;
+    height: 14px !important;
+    margin: 0 !important;
+    position: static !important;
+    inset: auto !important;
+    transform: none !important
+}
+
+.luxe-app .recommend-add:hover,
+.luxe-app .recommend-add:active {
+    background: #F3C4CE !important;
+    border-color: #F3C4CE !important;
+    color: #171111 !important;
+    transform: translateY(-1px) !important
+}
+
+.luxe-app .recommend-add:focus,
+.luxe-app .recommend-add:focus-visible {
+    background: transparent !important;
+    color: #171111 !important;
+    outline: 2px solid #D98FA1 !important;
+    outline-offset: 3px !important
+}
+
+/* Collection cards — natural height */
+.luxe-app .luxe-grid {
+    align-items: stretch !important
+}
+
+.luxe-app .luxe-card {
+    display: grid !important;
+    grid-template-rows: auto auto auto !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    height: auto !important;
+    min-height: 0 !important
+}
+
+.luxe-app .luxe-card-media {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: .77 !important;
+    flex: none !important
+}
+
+.luxe-app .luxe-card-info {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    gap: 15px !important;
+    padding: 13px 1px 9px !important;
+    min-height: 0 !important;
+    box-sizing: border-box !important
+}
+
+.luxe-app .luxe-card-info>div {
+    min-width: 0 !important
+}
+
+.luxe-app .luxe-card-info p {
+    margin: 0 0 4px !important;
+    line-height: 1.25 !important
+}
+
+.luxe-app .luxe-card-info h3 {
+    margin: 0 0 5px !important;
+    line-height: 1.02 !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important
+}
+
+.luxe-app .luxe-card-info span {
+    margin: 0 !important;
+    line-height: 1.25 !important
+}
+
+.luxe-app .luxe-card-info strong {
+    padding-top: 1px !important;
+    line-height: 1.2 !important
+}
+
+.luxe-app .luxe-add {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 38px !important;
+    flex: none !important;
+    margin: 0 !important;
+    padding: 11px 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 7px !important;
+    line-height: 1 !important
+}
+
+.luxe-app .luxe-add svg {
+    display: block !important;
+    flex: 0 0 15px !important;
+    width: 15px !important;
+    height: 15px !important;
+    margin: 0 !important;
+    position: static !important;
+    transform: none !important
+}
+
+/* Consultation CTA */
+.luxe-app .luxe-concierge .luxe-btn-light,
+.luxe-app .luxe-concierge a.luxe-btn-light,
+.luxe-app .luxe-concierge button.luxe-btn-light {
+    transition: background .25s ease, color .25s ease, border-color .25s ease, transform .25s ease !important
+}
+
+.luxe-app .luxe-concierge .luxe-btn-light:hover,
+.luxe-app .luxe-concierge .luxe-btn-light:active,
+.luxe-app .luxe-concierge .luxe-btn-light:focus {
+    background: #F3C4CE !important;
+    background-color: #F3C4CE !important;
+    background-image: none !important;
+    color: #171111 !important;
+    border-color: #F3C4CE !important;
+    box-shadow: none !important;
+    transform: translateY(-2px) !important
+}
+
+.luxe-app .luxe-concierge .luxe-btn-light::before,
+.luxe-app .luxe-concierge .luxe-btn-light::after {
+    background: #F3C4CE !important
+}
+
+/* General premium interactions */
+.luxe-app .luxe-header {
+    box-shadow: 0 1px 0 rgba(23, 17, 17, .06)
+}
+
+.luxe-app .luxe-logo {
+    transition: opacity .25s ease
+}
+
+.luxe-app .luxe-logo:hover {
+    opacity: .68
+}
+
+.luxe-app .luxe-nav-links a {
+    transition: color .25s ease
+}
+
+.luxe-app .luxe-nav-links a:hover {
+    color: var(--luxe-pink-deep)
+}
+
+.luxe-app .hero__button {
+    background: var(--luxe-pink) !important;
+    color: #171111 !important;
+    border: 1px solid var(--luxe-pink) !important
+}
+
+.luxe-app .hero__button:hover {
+    background: #fff !important;
+    border-color: #fff !important;
+    transform: translateY(-2px)
+}
+
+.luxe-app .luxe-card {
+    transition: transform .3s ease
+}
+
+.luxe-app .luxe-card:hover {
+    transform: translateY(-3px)
+}
+
+.luxe-app .luxe-card-media img {
+    transition: transform .8s cubic-bezier(.2, .7, .2, 1), filter .4s ease !important
+}
+
+.luxe-app .luxe-card:hover .luxe-card-media img {
+    transform: scale(1.055);
+    filter: saturate(1.03)
+}
+
+.luxe-app .luxe-add {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 8px !important
+}
+
+.luxe-app .luxe-add:hover {
+    background: var(--luxe-pink) !important;
+    color: var(--luxe-ink) !important;
+    border-color: var(--luxe-pink) !important
+}
+
+.luxe-app .outline-btn:hover {
+    background: var(--luxe-pink) !important;
+    color: var(--luxe-ink) !important;
+    border-color: var(--luxe-pink) !important;
+    transform: translateY(-2px)
+}
+
+.luxe-app .benefit-grid article,
+.luxe-app .review-card {
+    transition: transform .3s ease, box-shadow .3s ease
+}
+
+.luxe-app .benefit-grid article:hover,
+.luxe-app .review-card:hover {
+    transform: translateY(-4px)
+}
+
+.luxe-app .luxe-pdp-add:hover {
+    background: var(--luxe-pink) !important;
+    color: var(--luxe-ink) !important;
+    border-color: var(--luxe-pink) !important;
+    transform: translateY(-2px)
+}
+
+.luxe-app .luxe-cart {
+    box-shadow: -18px 0 55px rgba(23, 17, 17, .12)
+}
+
+.luxe-app .luxe-cart-item:hover {
+    background: rgba(243, 196, 206, .12)
+}
+
+.luxe-app button,
+.luxe-app a {
+    touch-action: manipulation
+}
+
+.luxe-app :focus-visible {
+    outline: 2px solid var(--luxe-pink-deep);
+    outline-offset: 3px
+}
+
+@media(max-width:900px) {
+    .luxe-app .recommend-copy h3 {
+        font-size: 23px !important
+    }
+}
+
+@media(max-width:600px) {
+    .luxe-app .recommend-card {
+        flex-basis: 230px !important;
+    }
+
+    .luxe-app .recommend-media {
+        aspect-ratio: .9 !important
+    }
+
+    .luxe-app .recommend-add {
+        height: 42px !important;
+        min-height: 42px !important;
+        flex-basis: 42px !important;
+        padding: 0 12px !important
+    }
+
+    .luxe-app .recommend-copy {
+        padding-top: 12px !important
+    }
+
+    .luxe-app .recommend-copy h3 {
+        font-size: 21px !important;
+        margin-bottom: 8px !important
+    }
+
+    .luxe-app .recommend-copy p {
+        font-size: 7px !important
+    }
+
+    .luxe-app .recommend-copy strong {
+        font-size: 9px !important
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+    .luxe-app *,
+    .luxe-app *::before,
+    .luxe-app *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important
+    }
+}

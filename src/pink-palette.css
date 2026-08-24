@@ -1,0 +1,75 @@
+.luxe-app {
+    --taupe: #F3C4CE !important;
+    --sand: #F0C0CA !important;
+    --bronze: #D98FA1 !important
+}
+
+.luxe-app .luxe-header {
+    border-bottom-color: rgba(217, 143, 161, .18) !important
+}
+
+.luxe-app .luxe-announce {
+    background: #F3C4CE !important
+}
+
+.luxe-app .luxe-nav-links a:after {
+    background: #F3C4CE !important
+}
+
+.luxe-app .luxe-section-head h2 em {
+    color: #F3C4CE !important
+}
+
+.luxe-app .eyebrow {
+    color: #D98FA1 !important
+}
+
+.luxe-app .luxe-pdp-thumbs button.active {
+    border-color: #F3C4CE !important
+}
+
+.luxe-app .luxe-rating {
+    color: #D98FA1 !important
+}
+
+.luxe-app .luxe-accordions details {
+    border-top-color: rgba(217, 143, 161, .28) !important
+}
+
+.luxe-app .luxe-cart-head h2 small {
+    background: #F3C4CE !important
+}
+
+.luxe-app .luxe-empty svg {
+    color: #F3C4CE !important
+}
+
+.luxe-app .hero__rule,
+.luxe-app .hero__dot.is-active {
+    background: #F0C0CA !important
+}
+
+.luxe-app .hero .eyebrow,
+.luxe-app .hero__scroll span {
+    color: #F0C0CA !important
+}
+
+.luxe-app .luxe-concierge .eyebrow {
+    color: #F0C0CA !important
+}
+
+.luxe-app .luxe-concierge .luxe-btn-light:hover {
+    background: #F0C0CA !important;
+    border-color: #F0C0CA !important
+}
+
+.luxe-app .benefit-icon {
+    border-color: rgba(243, 196, 206, .45) !important;
+    color: #F3C4CE !important
+}
+
+.luxe-app .center-action .outline-btn:hover,
+.luxe-app .recommend-section .text-link:hover {
+    background: #D98FA1 !important;
+    border-color: #D98FA1 !important
+}

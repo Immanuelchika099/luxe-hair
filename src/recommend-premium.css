@@ -1,0 +1,65 @@
+.luxe-app .recommend-marquee-track {
+    display: flex;
+    gap: 18px
+}
+
+.luxe-app .recommend-card {
+    flex: 0 0 clamp(230px, 24vw, 315px);
+    min-width: 0 ;
+}
+
+.luxe-app .recommend-add {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 7px !important;
+    width: 100% !important;
+    min-height: 44px !important
+}
+
+.luxe-app .recommend-add:hover {
+    background: #F3C4CE !important;
+    border-color: #F3C4CE !important;
+    color: #171111 !important
+}
+
+.luxe-app .recommend-media>button {
+    display: grid !important;
+    place-items: center !important
+}
+
+.luxe-app .recommend-copy {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px
+}
+
+.luxe-app .luxe-concierge .luxe-btn-light:hover {
+    background: #F3C4CE !important;
+    color: #171111 !important;
+    border-color: #F3C4CE !important
+}
+
+.luxe-app .luxe-concierge .luxe-btn-light {
+    transition: background .25s ease, color .25s ease, border-color .25s ease, transform .25s ease
+}
+
+.luxe-app .luxe-concierge .luxe-btn-light:hover {
+    transform: translateY(-2px)
+}
+
+@media(max-width:600px) {
+    .luxe-app .recommend-card {
+        flex-basis: 230px
+    }
+
+    .luxe-app .recommend-marquee-track {
+        gap: 12px 
+    }
+
+    .luxe-app .recommend-add {
+        min-height: 42px
+    }
+}

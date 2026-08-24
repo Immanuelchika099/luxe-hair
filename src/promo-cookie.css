@@ -1,0 +1,263 @@
+.luxe-promo-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 130;
+    background: rgba(15, 9, 8, .68);
+    backdrop-filter: blur(4px);
+    display: grid;
+    place-items: center;
+    padding: 20px
+}
+
+.luxe-promo-modal {
+    position: relative;
+    width: min(820px, 100%);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, .88fr);
+    background: var(--cream);
+    box-shadow: 0 30px 90px rgba(0, 0, 0, .28);
+    overflow: hidden
+}
+
+.luxe-promo-image {
+    height: 430px;
+    min-height: 0;
+    background: #e8e1d8
+}
+
+.luxe-promo-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover
+}
+
+.luxe-promo-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 42px 44px
+}
+
+.luxe-promo-copy h2 {
+    font: 500 clamp(40px, 4.6vw, 60px)/.88 'Cormorant Garamond', serif;
+    margin: 12px 0 16px;
+    max-width: 360px
+}
+
+.luxe-promo-copy>p:not(.eyebrow) {
+    font-size: 10.5px;
+    line-height: 1.8;
+    color: #766b65;
+    max-width: 320px;
+    margin: 0 0 24px
+}
+
+.luxe-promo-close {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    z-index: 2;
+    width: 38px;
+    height: 38px;
+    border: 0;
+    background: rgba(249, 246, 240, .92);
+    color: var(--espresso);
+    display: grid;
+    place-items: center;
+    cursor: pointer
+}
+
+.luxe-promo-cta {
+    width: max-content;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--taupe);
+    border: 1px solid var(--taupe);
+    color: var(--espresso);
+    padding: 14px 18px;
+    font: 600 9px Inter, sans-serif;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    transition: all .25s ease
+}
+
+.luxe-promo-cta:hover {
+    background: var(--espresso);
+    border-color: var(--espresso);
+    color: var(--cream)
+}
+
+.luxe-cookie-banner {
+    position: fixed;
+    left: 24px;
+    right: 24px;
+    bottom: 22px;
+    z-index: 120;
+    background: rgba(249, 246, 240, .97);
+    border: 1px solid rgba(140, 109, 70, .2);
+    box-shadow: 0 16px 50px rgba(26, 17, 16, .15);
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    backdrop-filter: blur(14px)
+}
+
+.luxe-cookie-copy h3 {
+    font: 500 25px 'Cormorant Garamond', serif;
+    margin: 4px 0 2px
+}
+
+.luxe-cookie-copy>p:not(.eyebrow) {
+    font-size: 9px;
+    line-height: 1.6;
+    color: #81766e;
+    margin: 0;
+    max-width: 600px
+}
+
+.luxe-cookie-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0
+}
+
+.luxe-cookie-actions button {
+    font: 500 8px Inter, sans-serif;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    cursor: pointer
+}
+
+.luxe-cookie-decline {
+    border: 1px solid rgba(26, 17, 16, .2);
+    background: transparent;
+    color: var(--espresso);
+    padding: 12px 15px
+}
+
+.luxe-cookie-accept {
+    border: 1px solid var(--espresso);
+    background: var(--espresso);
+    color: var(--cream);
+    padding: 12px 17px
+}
+
+.luxe-cookie-close {
+    border: 0;
+    background: transparent;
+    color: var(--espresso);
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center
+}
+
+.luxe-cookie-close:hover,
+.luxe-promo-close:hover {
+    opacity: .65
+}
+
+.luxe-whatsapp-float {
+    position: fixed;
+    right: 24px;
+    bottom: 92px;
+    z-index: 115;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #25D366;
+    color: #fff;
+    box-shadow: 0 10px 28px rgba(18, 80, 40, .28);
+    transition: transform .25s ease, box-shadow .25s ease
+}
+
+.luxe-whatsapp-float:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 14px 34px rgba(18, 80, 40, .35)
+}
+
+.luxe-whatsapp-float:focus-visible {
+    outline: 2px solid var(--espresso);
+    outline-offset: 4px
+}
+
+@media(max-width:700px) {
+    .luxe-promo-backdrop {
+        padding: 14px
+    }
+
+    .luxe-promo-modal {
+        grid-template-columns: 1fr;
+        max-height: calc(100dvh - 28px);
+        overflow: auto
+    }
+
+    .luxe-promo-image {
+        height: 34vh;
+        min-height: 220px
+    }
+
+    .luxe-promo-copy {
+        padding: 28px 24px 30px
+    }
+
+    .luxe-promo-copy h2 {
+        font-size: 43px
+    }
+
+    .luxe-promo-copy>p:not(.eyebrow) {
+        margin-bottom: 20px
+    }
+
+    .luxe-cookie-banner {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        padding: 17px;
+        align-items: flex-start;
+        gap: 15px
+    }
+
+    .luxe-cookie-banner {
+        flex-direction: column
+    }
+
+    .luxe-cookie-actions {
+        width: 100%
+    }
+
+    .luxe-cookie-actions button {
+        flex: 1
+    }
+
+    .luxe-cookie-close {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        flex: 0 0 30px !important
+    }
+
+    .luxe-cookie-copy {
+        padding-right: 20px
+    }
+
+    .luxe-whatsapp-float {
+        right: 16px;
+        bottom: 88px;
+        width: 52px;
+        height: 52px
+    }
+
+    .luxe-whatsapp-float svg {
+        width: 23px;
+        height: 23px
+    }
+}

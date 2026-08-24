@@ -1,0 +1,185 @@
+.luxe-app .recommend-marquee {
+    width: 100% !important;
+    overflow: hidden !important;
+    position: relative !important;
+    padding: 0 0 22px !important
+}
+
+.luxe-app .recommend-marquee-track {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    width: max-content !important;
+    gap: 14px !important;
+    animation: luxeWigMarqueeRight 34s linear infinite !important;
+    will-change: transform !important
+}
+
+.luxe-app .recommend-marquee:hover .recommend-marquee-track {
+    animation-play-state: paused !important
+}
+
+.luxe-app .recommend-marquee .recommend-card {
+    display: block !important;
+    flex: 0 0 clamp(185px, 17vw, 235px) !important;
+    width: clamp(185px, 17vw, 235px) !important;
+    min-width: clamp(185px, 17vw, 235px) !important
+}
+
+.luxe-app .recommend-marquee .recommend-media {
+    display: block !important;
+    width: 100% !important;
+    aspect-ratio: .84 !important
+}
+
+.luxe-app .recommend-marquee .recommend-copy {
+    padding: 12px 12px 6px !important
+}
+
+.luxe-app .recommend-marquee .recommend-copy h3 {
+    font-size: 21px !important
+}
+
+.luxe-app .recommend-marquee .recommend-add {
+    margin: 0 12px !important;
+    width: calc(100% - 24px) !important;
+    padding: 9px !important
+}
+
+@keyframes luxeWigMarqueeRight {
+    from {
+        transform: translate3d(calc(-50% - 7px), 0, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@media(max-width:600px) {
+    .luxe-app .recommend-marquee-track {
+        gap: 12px !important;
+        animation-duration: 28s !important
+    }
+
+    .luxe-app .recommend-marquee .recommend-card {
+        flex-basis: 155px !important;
+        width: 155px !important;
+        min-width: 155px !important
+    }
+
+    .luxe-app .recommend-marquee .recommend-media {
+        aspect-ratio: .82 !important
+    }
+
+    .luxe-app .recommend-marquee .recommend-copy h3 {
+        font-size: 18px !important
+    }
+}
+
+.luxe-app .reviews-track {
+    display: flex !important;
+    grid-template-columns: none !important;
+    max-width: none !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+    gap: 18px !important;
+    scroll-snap-type: x mandatory !important
+}
+
+.luxe-app .reviews-track::-webkit-scrollbar {
+    display: none !important
+}
+
+.luxe-app .review-card {
+    flex: 0 0 min(380px, 82vw) !important;
+    width: auto !important;
+    scroll-snap-align: start !important
+}
+
+.luxe-app .review-pagination {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 9px !important;
+    margin: 28px auto 0 !important;
+    width: 100% !important;
+}
+
+.luxe-app .review-pagination button {
+    width: 7px !important;
+    height: 7px !important;
+    min-width: 7px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 50% !important;
+    background: #c5b9ae !important;
+    cursor: pointer !important;
+    transition: transform .25s ease, background .25s ease !important
+}
+
+.luxe-app .review-pagination button.is-active {
+    background: #8c6d46 !important;
+    transform: scale(1.65) !important
+}
+
+@media(max-width:600px) {
+    .luxe-app .review-pagination {
+        margin-top: 22px !important
+    }
+
+    .luxe-app .review-pagination button {
+        width: 6px !important;
+        height: 6px !important;
+        min-width: 6px !important
+    }
+}
+
+/* Mobile menu location — make Lagos, Nigeria feel like part of the navigation */
+.luxe-app .luxe-mobile-menu .luxe-mobile-location {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+    margin: 22px 0 0 !important;
+    padding: 18px 0 0 !important;
+    border-top: 1px solid rgba(140, 109, 70, .22) !important;
+    width: 100% !important;
+    position: static !important;
+    color: inherit !important;
+    text-align: left !important
+}
+
+.luxe-app .luxe-mobile-menu .luxe-mobile-location-label {
+    display: block !important;
+    font-size: 8px !important;
+    line-height: 1 !important;
+    letter-spacing: .22em !important;
+    text-transform: uppercase !important;
+    color: var(--bronze) !important
+}
+
+.luxe-app .luxe-mobile-menu .luxe-mobile-location-city {
+    display: block !important;
+    font: 500 23px/1.1 'Cormorant Garamond', serif !important;
+    letter-spacing: .01em !important;
+    color: var(--espresso) !important
+}
+
+.luxe-app .luxe-mobile-menu .luxe-mobile-location-city:before {
+    content: '●' !important;
+    font-family: Inter, sans-serif !important;
+    font-size: 7px !important;
+    color: var(--taupe) !important;
+    vertical-align: middle !important;
+    margin-right: 9px !important
+}
+
+.luxe-app .luxe-mobile-menu>a {
+    display: block
+}
+
+.luxe-app .luxe-mobile-menu .luxe-mobile-location {
+    flex-shrink: 0 !important
+}

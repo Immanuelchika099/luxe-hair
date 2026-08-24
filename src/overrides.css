@@ -1,0 +1,784 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+.luxe-app .hero {
+    height: 65vh !important;
+    min-height: 560px !important;
+    max-height: 760px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    background: #120c0b !important;
+    isolation: isolate !important;
+    padding: 0 7vw 8vh !important;
+    display: flex !important;
+    align-items: flex-end !important
+}
+
+.luxe-app .hero__slides {
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 0 !important
+}
+
+.luxe-app .hero__slide {
+    position: absolute !important;
+    inset: 0 !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    opacity: 0 !important;
+    transform: scale(1.055) !important;
+    transition: opacity 1.15s ease, transform 7s cubic-bezier(.2, .6, .2, 1) !important
+}
+
+.luxe-app .hero__slide.is-active {
+    opacity: 1 !important;
+    transform: scale(1) !important
+}
+
+.luxe-app .hero__veil {
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 1 !important;
+    pointer-events: none !important;
+    background: linear-gradient(90deg, rgba(10, 6, 5, .88), rgba(15, 9, 8, .62) 38%, rgba(15, 9, 8, .2) 72%, rgba(15, 9, 8, .08)), linear-gradient(0deg, rgba(10, 6, 5, .72), transparent 55%) !important
+}
+
+.luxe-app .hero__grain {
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 2 !important;
+    pointer-events: none !important;
+    opacity: .07 !important
+}
+
+.luxe-app .hero__content {
+    position: relative !important;
+    z-index: 3 !important;
+    height: auto !important;
+    max-width: 760px !important;
+    padding-top: 40px !important
+}
+
+.luxe-app .hero__rule {
+    width: 58px;
+    height: 1px;
+    background: #d2b48c;
+    margin-bottom: 22px;
+    transform-origin: left
+}
+
+.luxe-app .hero .eyebrow {
+    color: #d2b48c !important;
+    letter-spacing: .28em !important;
+    margin-bottom: 18px !important
+}
+
+.luxe-app .hero h1 {
+    font-size: clamp(54px, 7vw, 104px) !important;
+    line-height: .82 !important;
+    letter-spacing: -.045em !important;
+    margin: 0 0 25px !important;
+    text-shadow: 0 10px 35px rgba(0, 0, 0, .2)
+}
+
+.luxe-app .hero h1 em {
+    color: #f9f6f0 !important
+}
+
+.luxe-app .hero__copy {
+    max-width: 490px !important;
+    font-size: 13px !important;
+    line-height: 1.8 !important;
+    color: rgba(249, 246, 240, .78) !important;
+    margin-bottom: 28px !important
+}
+
+.luxe-app .hero__actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 24px !important
+}
+
+.luxe-app .hero__button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 13px !important;
+    background: #f9f6f0 !important;
+    color: #1a1110 !important;
+    padding: 14px 20px !important;
+    font-size: 9px !important;
+    letter-spacing: .17em !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    transition: .3s ease !important
+}
+
+.luxe-app .hero__secondary {
+    font-size: 9px !important;
+    letter-spacing: .16em !important;
+    text-transform: uppercase !important;
+    color: rgba(249, 246, 240, .82) !important;
+    border-bottom: 1px solid rgba(249, 246, 240, .45) !important;
+    padding-bottom: 7px !important
+}
+
+.luxe-app .hero__controls {
+    position: absolute !important;
+    z-index: 4 !important;
+    left: 7vw !important;
+    right: 7vw !important;
+    bottom: 30px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important
+}
+
+.luxe-app .hero__dots {
+    display: flex !important;
+    align-items: center !important;
+    gap: 9px !important
+}
+
+.luxe-app .hero__dot {
+    width: 28px !important;
+    height: 2px !important;
+    border-radius: 0 !important;
+    background: rgba(249, 246, 240, .35) !important;
+    padding: 0 !important;
+    transition: .35s ease !important
+}
+
+.luxe-app .hero__dot.is-active {
+    width: 54px !important;
+    background: #d2b48c !important
+}
+
+.luxe-app .hero__counter {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    color: rgba(249, 246, 240, .75) !important;
+    font-size: 9px !important;
+    letter-spacing: .18em !important
+}
+
+.luxe-app .hero__counter i {
+    display: block !important;
+    width: 25px !important;
+    height: 1px !important;
+    background: rgba(249, 246, 240, .35) !important
+}
+
+.luxe-app .hero__scroll {
+    position: absolute !important;
+    right: 3vw !important;
+    bottom: 100px !important;
+    z-index: 4 !important;
+    color: rgba(249, 246, 240, .58) !important;
+    font-size: 7px !important;
+    letter-spacing: .2em !important;
+    text-transform: uppercase !important;
+    writing-mode: vertical-rl !important
+}
+
+.luxe-app .hero__scroll span {
+    margin-top: 9px !important;
+    color: #d2b48c !important
+}
+
+.luxe-app .luxe-collection {
+    padding: 120px 0 135px !important;
+    background: #f9f6f0 !important
+}
+
+.luxe-app .luxe-section-head {
+    margin-bottom: 50px !important
+}
+
+.luxe-app .luxe-section-head h2 {
+    font-size: clamp(48px, 6vw, 88px) !important;
+    letter-spacing: -.04em !important
+}
+
+.luxe-app .luxe-section-head>p {
+    font-size: 12px !important;
+    line-height: 1.9 !important
+}
+
+.luxe-app .luxe-filters {
+    margin-bottom: 42px !important
+}
+
+.luxe-app .luxe-filters button {
+    padding: 11px 18px !important;
+    transition: .25s !important
+}
+
+.luxe-app .luxe-grid {
+    gap: 48px 18px !important
+}
+
+.luxe-app .luxe-card-media {
+    aspect-ratio: .76 !important;
+    background: #e7dfd4 !important
+}
+
+.luxe-app .luxe-card-info {
+    padding: 15px 1px 10px !important
+}
+
+.luxe-app .luxe-card-info h3 {
+    font-size: 27px !important
+}
+
+.luxe-app .luxe-add {
+    padding: 13px !important;
+    transition: .25s !important
+}
+
+.luxe-app .luxe-add:hover {
+    transform: translateY(-1px) !important
+}
+
+.luxe-app .luxe-concierge {
+    min-height: 650px !important;
+    background: linear-gradient(90deg, rgba(20, 12, 10, .9), rgba(20, 12, 10, .48)), url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1800&q=85') center/cover !important
+}
+
+.luxe-app .luxe-concierge h2 {
+    font-size: clamp(52px, 7vw, 100px) !important
+}
+
+.luxe-app .lux-footer {
+    margin-top: 0 !important
+}
+
+/* Search: clean luxury drawer instead of a cramped strip */
+.luxe-app .luxe-search-bar {
+    position: absolute !important;
+    top: 100% !important;
+    left: 4% !important;
+    right: 4% !important;
+    height: 76px !important;
+    background: #f9f6f0 !important;
+    border: 1px solid rgba(26, 17, 16, .1) !important;
+    box-shadow: 0 18px 45px rgba(26, 17, 16, .13) !important;
+    padding: 0 24px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    z-index: 80 !important
+}
+
+.luxe-app .luxe-search-bar form {
+    flex: 1 !important
+}
+
+.luxe-app .luxe-search-bar input {
+    width: 100% !important;
+    border: 0 !important;
+    outline: 0 !important;
+    background: transparent !important;
+    color: #241916 !important;
+    font: 500 16px 'Cormorant Garamond', serif !important;
+    letter-spacing: .01em !important
+}
+
+.luxe-app .luxe-search-bar input::placeholder {
+    color: #9b8e85 !important
+}
+
+.luxe-app .luxe-search-bar>svg {
+    color: #8c6d46 !important
+}
+
+.luxe-app .luxe-search-bar>button {
+    border: 0 !important;
+    background: transparent !important;
+    color: #6f625a !important;
+    width: 36px !important;
+    height: 36px !important;
+    display: grid !important;
+    place-items: center !important;
+    cursor: pointer !important
+}
+
+.luxe-app .luxe-header {
+    position: relative !important;
+    z-index: 90 !important
+}
+
+/* Buttons below collections */
+.luxe-app .center-action {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin-top: 45px !important
+}
+
+.luxe-app .center-action .outline-btn,
+.luxe-app .recommend-section .text-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    background: #1a1110 !important;
+    color: #f9f6f0 !important;
+    border: 1px solid #1a1110 !important;
+    padding: 14px 22px !important;
+    font-size: 9px !important;
+    letter-spacing: .16em !important;
+    text-transform: uppercase !important;
+    transition: .3s !important
+}
+
+.luxe-app .center-action .outline-btn:hover,
+.luxe-app .recommend-section .text-link:hover {
+    background: #8c6d46 !important;
+    border-color: #8c6d46 !important;
+    transform: translateY(-2px) !important
+}
+
+.luxe-app .recommend-section .luxe-section-head {
+    display: flex !important;
+    align-items: end !important;
+    justify-content: space-between !important;
+    gap: 30px !important
+}
+
+.luxe-app .recommend-section .text-link {
+    white-space: nowrap !important;
+    margin-bottom: 4px !important
+}
+
+/* Recommended edit: compact cards with a horizontal scroller */
+.luxe-app .recommend-track {
+    display: flex !important;
+    overflow-x: auto !important;
+    overscroll-behavior-x: contain !important;
+    scroll-snap-type: x mandatory !important;
+    scrollbar-width: none !important;
+    gap: 16px !important
+}
+
+.luxe-app .recommend-track::-webkit-scrollbar {
+    display: none !important
+}
+
+.luxe-app .recommend-card {
+    flex: 0 0 clamp(210px, 18vw, 260px) !important;
+    scroll-snap-align: start !important
+}
+
+.luxe-app .recommend-media {
+    aspect-ratio: .82 !important
+}
+
+.luxe-app .recommend-copy h3 {
+    font-size: 23px !important
+}
+
+.luxe-app .recommend-add {
+    font-size: 8px !important
+}
+
+/* Why LUXÉ */
+.luxe-app .why-luxe {
+    padding: 130px 4%;
+    background: #17100f;
+    color: #f9f6f0;
+    display: grid;
+    grid-template-columns: 1fr .85fr;
+    gap: 70px;
+    position: relative;
+    overflow: hidden
+}
+
+.luxe-app .why-luxe-image {
+    height: 560px !important;
+    overflow: hidden !important;
+    position: relative !important
+}
+
+.luxe-app .why-luxe-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+    filter: saturate(.9) !important;
+    object-position: center !important
+}
+
+.luxe-app .benefit-grid {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid rgba(249, 246, 240, .15);
+    margin-top: 20px
+}
+
+.luxe-app .benefit-grid article {
+    padding: 30px 30px 15px 0;
+    border-right: 1px solid rgba(249, 246, 240, .12);
+    margin-right: 30px
+}
+
+.luxe-app .benefit-grid article:nth-child(3n) {
+    border-right: 0;
+    margin-right: 0
+}
+
+.luxe-app .benefit-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(196, 164, 132, .45);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #c4a484;
+    margin-bottom: 18px
+}
+
+.luxe-app .benefit-grid h3 {
+    font: 500 25px 'Cormorant Garamond', serif;
+    margin: 0 0 8px
+}
+
+.luxe-app .benefit-grid p {
+    font-size: 10px;
+    line-height: 1.8;
+    color: #a99e95;
+    margin: 0;
+    max-width: 270px
+}
+
+/* Testimonials: horizontal swipe/drag instead of stacked cards */
+.luxe-app .reviews-track {
+    display: flex !important;
+    overflow-x: auto !important;
+    gap: 18px !important;
+    padding: 0 4% 20px !important;
+    scroll-snap-type: x mandatory !important;
+    scrollbar-width: thin !important;
+    overscroll-behavior-x: contain !important
+}
+
+.luxe-app .review-card {
+    flex: 0 0 min(380px, 82vw) !important;
+    scroll-snap-align: start !important;
+    min-height: 290px !important
+}
+
+/* Concierge CTA */
+.luxe-app .luxe-concierge .luxe-btn-light {
+    background: #f9f6f0 !important;
+    color: #1a1110 !important;
+    border: 1px solid #f9f6f0 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .18) !important
+}
+
+.luxe-app .luxe-concierge .luxe-btn-light:hover {
+    background: #d2b48c !important;
+    color: #1a1110 !important;
+    border-color: #d2b48c !important
+}
+
+/* Back to top must be viewport-fixed */
+.luxe-app .back-to-top {
+    position: fixed !important;
+    right: 24px !important;
+    bottom: 24px !important;
+    left: auto !important;
+    top: auto !important;
+    z-index: 999 !important;
+    width: 46px !important;
+    height: 46px !important;
+    border-radius: 50% !important;
+    border: 1px solid rgba(26, 17, 16, .2) !important;
+    background: #1a1110 !important;
+    color: #f9f6f0 !important;
+    display: grid !important;
+    place-items: center !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .2) !important;
+    cursor: pointer !important
+}
+
+/* Mobile navigation */
+.luxe-app .luxe-nav-toggle {
+    display: none
+}
+
+.luxe-app .luxe-mobile-menu {
+    display: none
+}
+
+@media(max-width:800px) {
+    .luxe-app .hero {
+        height: 65vh !important;
+        min-height: 540px !important;
+        padding: 0 6vw 7vh !important
+    }
+
+    .luxe-app .hero__content {
+        max-width: 92% !important
+    }
+
+    .luxe-app .hero h1 {
+        font-size: clamp(52px, 14vw, 78px) !important
+    }
+
+    .luxe-app .hero__copy {
+        font-size: 12px !important;
+        max-width: 390px !important
+    }
+
+    .luxe-app .hero__secondary {
+        display: none !important
+    }
+
+    .luxe-app .hero__controls {
+        left: 6vw !important;
+        right: 6vw !important;
+        bottom: 24px !important
+    }
+
+    .luxe-app .hero__scroll {
+        display: none !important
+    }
+
+    .luxe-app .luxe-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 32px 12px !important
+    }
+
+    .luxe-app .luxe-nav-links {
+        display: none !important
+    }
+
+    .luxe-app .luxe-search-bar {
+        left: 3% !important;
+        right: 3% !important;
+        height: 68px !important;
+        padding: 0 16px !important
+    }
+
+    .luxe-app .luxe-search-bar input {
+        font-size: 15px !important
+    }
+
+    .luxe-app .recommend-section .luxe-section-head {
+        display: flex !important;
+        align-items: flex-end !important
+    }
+
+    .luxe-app .recommend-card {
+        flex-basis: 220px !important
+    }
+
+    .luxe-app .why-luxe {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+        padding: 90px 5% !important
+    }
+
+    .luxe-app .why-luxe-image {
+        height: 430px !important
+    }
+
+    .luxe-app .benefit-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0 !important
+    }
+
+    .luxe-app .benefit-grid article:nth-child(3n) {
+        border-right: 1px solid rgba(249, 246, 240, .12);
+        margin-right: 30px
+    }
+
+    .luxe-app .lux-footer-links {
+        grid-template-columns: repeat(3, 1fr) !important
+    }
+
+    .luxe-app .lux-footer-newsletter {
+        flex-direction: column !important;
+        align-items: flex-start !important
+    }
+
+    .luxe-app .lux-footer-contact {
+        grid-template-columns: 1fr !important
+    }
+}
+
+@media(max-width:600px) {
+    .luxe-app .hero {
+        min-height: 500px !important
+    }
+
+    .luxe-app .hero__actions {
+        gap: 14px !important
+    }
+
+    .luxe-app .hero__button {
+        padding: 13px 15px !important;
+        font-size: 8px !important
+    }
+
+    .luxe-app .luxe-grid {
+        grid-template-columns: 1fr 1fr !important
+    }
+
+    .luxe-app .luxe-card-info h3 {
+        font-size: 22px !important
+    }
+
+    .luxe-app .luxe-filters {
+        padding-left: 6% !important
+    }
+
+    .luxe-app .luxe-section-head {
+        padding: 0 6% !important
+    }
+
+    .luxe-app .recommend-section .luxe-section-head {
+        padding: 0 6% !important
+    }
+
+    .luxe-app .recommend-section .text-link {
+        font-size: 8px !important;
+        padding: 11px 13px !important
+    }
+
+    .luxe-app .recommend-track {
+        padding-left: 6% !important;
+        padding-right: 6% !important
+    }
+
+    .luxe-app .why-luxe {
+        padding: 75px 5% !important
+    }
+
+    .luxe-app .benefit-grid {
+        grid-template-columns: 1fr !important
+    }
+
+    .luxe-app .benefit-grid article,
+    .luxe-app .benefit-grid article:nth-child(3n) {
+        border-right: 0 !important;
+        border-bottom: 1px solid rgba(249, 246, 240, .12);
+        margin-right: 0 !important;
+        padding: 24px 0 !important
+    }
+
+    .luxe-app .reviews-track {
+        padding-left: 6% !important;
+        padding-right: 6% !important
+    }
+
+    .luxe-app .review-card {
+        flex-basis: 84vw !important
+    }
+
+    .luxe-app .lux-footer-links {
+        grid-template-columns: 1fr 1fr !important
+    }
+
+    .luxe-app .lux-footer-payment {
+        flex-wrap: wrap !important
+    }
+
+    .luxe-app .lux-footer-payment span {
+        width: 100% !important
+    }
+
+    .luxe-app .lux-footer-bottom {
+        flex-direction: column !important
+    }
+
+    .luxe-app .back-to-top {
+        right: 16px !important;
+        bottom: 16px !important;
+        width: 42px !important;
+        height: 42px !important
+    }
+}
+
+/* Final mobile menu positioning */
+@media(max-width:800px) {
+    .luxe-app .luxe-mobile-menu {
+        position: fixed !important;
+        top: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: min(88vw, 390px) !important;
+        height: 100dvh !important;
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 34px 28px 30px !important;
+        overflow: hidden !important;
+        background: #f9f6f0 !important;
+        color: #1a1110 !important
+    }
+
+    .luxe-app .luxe-mobile-close {
+        position: absolute !important;
+        top: 22px !important;
+        right: 20px !important;
+        left: auto !important;
+        width: 42px !important;
+        height: 42px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: grid !important;
+        place-items: center !important;
+        border: 0 !important;
+        background: transparent !important;
+        color: #1a1110 !important;
+        z-index: 5 !important
+    }
+
+    .luxe-app .luxe-mobile-menu>.eyebrow {
+        margin-top: 18px !important;
+        margin-bottom: 44px !important
+    }
+
+    .luxe-app .luxe-mobile-menu>a {
+        flex: 0 0 auto !important
+    }
+
+    .luxe-app .luxe-mobile-location {
+        position: absolute !important;
+        left: 28px !important;
+        right: auto !important;
+        bottom: 28px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: 0 !important;
+        text-align: left !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 5px !important;
+        color: #8c6d46 !important
+    }
+
+    .luxe-app .luxe-mobile-location-label {
+        font-size: 8px !important;
+        letter-spacing: .24em !important;
+        text-transform: uppercase !important;
+        color: #b99a79 !important
+    }
+
+    .luxe-app .luxe-mobile-location-city {
+        font: 500 16px 'Cormorant Garamond', serif !important;
+        letter-spacing: .05em !important;
+        color: #8c6d46 !important
+    }
+
+    .luxe-app .luxe-mobile-location-city:before {
+        content: '•' !important;
+        margin-right: 8px !important;
+        color: #8c6d46 !important
+    }
+}

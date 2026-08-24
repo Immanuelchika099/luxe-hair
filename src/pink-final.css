@@ -1,0 +1,89 @@
+/* Final pink palette override — loaded last */
+.luxe-app {
+    --taupe: #F3C4CE !important;
+    --sand: #F0C0CA !important;
+    --bronze: #D98FA1 !important
+}
+
+/* Hero */
+.luxe-app .hero .eyebrow,
+.luxe-app .hero__scroll span,
+.luxe-app .hero__counter,
+.luxe-app .hero__counter i,
+.luxe-app .hero h1 em,
+.luxe-app .hero h1 span {
+    color: #F3C4CE !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important
+}
+
+.luxe-app .hero__rule,
+.luxe-app .hero__stamp i {
+    background: #F3C4CE !important;
+    border-color: #F3C4CE !important
+}
+
+.luxe-app .hero__dot {
+    background: #111 !important;
+    border-color: #111 !important
+}
+
+.luxe-app .hero__dot.is-active {
+    background: #F3C4CE !important;
+    border-color: #F3C4CE !important
+}
+
+/* Explore all wigs hover */
+.luxe-app .center-action .outline-btn:hover,
+.luxe-app .recommend-section .text-link:hover,
+.luxe-app .luxe-btn-outline:hover {
+    background: #F3C4CE !important;
+    border-color: #F3C4CE !important;
+    color: #111 !important
+}
+
+/* Why LUXÉ */
+.luxe-app .why-luxe-intro h2 em,
+.luxe-app .why-luxe-intro .eyebrow,
+.luxe-app .benefit-icon {
+    color: #F3C4CE !important
+}
+
+.luxe-app .benefit-icon {
+    border-color: rgba(243, 196, 206, .55) !important
+}
+
+/* Testimonials */
+.luxe-app .reviews-section .eyebrow,
+.luxe-app .reviews-section h2 em,
+.luxe-app .review-stars,
+.luxe-app .review-quote,
+.luxe-app .review-author>span {
+    color: #F3C4CE !important
+}
+
+.luxe-app .review-card:before {
+    background: #F3C4CE !important
+}
+
+.luxe-app .review-pagination button {
+    background: #111 !important;
+    border-color: #111 !important
+}
+
+.luxe-app .review-pagination button.is-active {
+    background: #F3C4CE !important;
+    border-color: #F3C4CE !important
+}
+
+/* Common accents */
+.luxe-app .eyebrow,
+.luxe-app .luxe-rating,
+.luxe-app .luxe-mobile-location-label,
+.luxe-app .footer-label {
+    color: #D98FA1 !important;
+    background: transparent !important;
+    background-color: transparent !important
+}

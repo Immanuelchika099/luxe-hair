@@ -1,0 +1,44 @@
+/* Mobile menu: keep navigation and atelier location at opposite edges */
+@media (max-width: 800px) {
+  .luxe-app .luxe-mobile-menu {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+  }
+
+  .luxe-app .luxe-mobile-menu-content {
+    display: flex !important;
+    flex: 1 !important;
+    min-height: 0 !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+
+  .luxe-app .luxe-mobile-links {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0 !important;
+    padding-top: 42px !important;
+  }
+
+  .luxe-app .luxe-mobile-location {
+    align-self: flex-start !important;
+    margin: 0 !important;
+    padding: 0 0 2px !important;
+    text-align: left !important;
+    color: #8c6d46 !important;
+  }
+
+  .luxe-app .luxe-mobile-location-label {
+    display: block !important;
+    margin-bottom: 5px !important;
+    color: #a58b6b !important;
+  }
+
+  .luxe-app .luxe-mobile-location-city {
+    display: block !important;
+    color: #8c6d46 !important;
+  }
+}

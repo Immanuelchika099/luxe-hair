@@ -1,0 +1,119 @@
+.luxe-app .luxe-pdp {
+    overflow-x: hidden !important
+}
+
+.luxe-app .luxe-related {
+    overflow: hidden !important;
+    padding-bottom: 30px !important
+}
+
+.luxe-app .luxe-related-track {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 14px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 4% 25px !important;
+    scroll-snap-type: x mandatory !important;
+    scroll-behavior: smooth !important;
+    overscroll-behavior-x: contain !important;
+    overscroll-behavior-y: none !important;
+    scrollbar-width: none !important;
+    -webkit-overflow-scrolling: touch !important
+}
+
+.luxe-app .luxe-related-track::-webkit-scrollbar {
+    display: none !important
+}
+
+.luxe-app .luxe-mini-card {
+    flex: 0 0 190px !important;
+    width: 190px !important;
+    min-width: 190px !important;
+    height: auto !important;
+    align-self: flex-start !important;
+    scroll-snap-align: start !important;
+    display: block !important;
+    background: #fff !important;
+    border: 1px solid rgba(26, 17, 16, .09) !important;
+    transition: transform .3s, box-shadow .3s !important
+}
+
+.luxe-app .luxe-mini-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 16px 35px rgba(26, 17, 16, .1) !important
+}
+
+.luxe-app .luxe-mini-card img {
+    width: 100% !important;
+    height: 225px !important;
+    aspect-ratio: auto !important;
+    object-fit: cover !important;
+    display: block !important
+}
+
+.luxe-app .luxe-mini-card>div {
+    padding: 11px 12px 14px !important
+}
+
+.luxe-app .luxe-mini-card p {
+    font-size: 7px !important;
+    line-height: 1.2 !important;
+    margin: 0 0 5px !important
+}
+
+.luxe-app .luxe-mini-card h3 {
+    font-size: 18px !important;
+    line-height: 1 !important;
+    margin: 0 0 6px !important
+}
+
+.luxe-app .luxe-mini-card strong {
+    font-size: 9px !important
+}
+
+.luxe-app .luxe-slider-arrows button {
+    width: 38px !important;
+    height: 38px !important
+}
+
+@media(max-width:600px) {
+    .luxe-app .luxe-related {
+        padding-top: 70px !important
+    }
+
+    .luxe-app .luxe-related-track {
+        gap: 12px !important;
+        padding-left: 6% !important;
+        padding-right: 6% !important;
+        overflow-y: hidden !important
+    }
+
+    .luxe-app .luxe-mini-card {
+        flex-basis: 155px !important;
+        width: 155px !important;
+        min-width: 155px !important
+    }
+
+    .luxe-app .luxe-mini-card img {
+        height: 190px !important
+    }
+
+    .luxe-app .luxe-mini-card>div {
+        padding: 9px 10px 12px !important
+    }
+
+    .luxe-app .luxe-mini-card h3 {
+        font-size: 16px !important
+    }
+
+    .luxe-app .luxe-mini-card p {
+        font-size: 6px !important
+    }
+
+    .luxe-app .luxe-mini-card strong {
+        font-size: 8px !important
+    }
+}

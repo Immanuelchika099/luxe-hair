@@ -1,0 +1,125 @@
+.luxe-app {
+    --taupe: #f3c4ce !important;
+    --sand: #f0c0ca !important;
+    --bronze: #d98fa1 !important
+}
+
+.luxe-app .lux-footer {
+    background: #120c0b;
+    color: #f9f6f0
+}
+
+.luxe-app .lux-footer-newsletter h2 em,
+.luxe-app .footer-label {
+    color: #f3c4ce !important
+}
+
+.luxe-app .luxe-search-bar>svg {
+    color: #d98fa1 !important
+}
+
+.luxe-app .luxe-mobile-location-label {
+    color: #d98fa1 !important
+}
+
+.luxe-app .luxe-mobile-location-city:before {
+    color: #f3c4ce !important
+}
+
+.luxe-app .luxe-announce {
+    background: #f3c4ce !important
+}
+
+.luxe-app .luxe-nav-links a:after {
+    background: #f3c4ce !important
+}
+
+.luxe-app .luxe-section-head h2 em {
+    color: #f3c4ce !important
+}
+
+.luxe-app .eyebrow {
+    color: #d98fa1 !important
+}
+
+.luxe-app .luxe-pdp-thumbs button.active {
+    border-color: #f3c4ce !important
+}
+
+.luxe-app .luxe-rating {
+    color: #d98fa1 !important
+}
+
+.luxe-app .luxe-accordions details {
+    border-top-color: rgba(217, 143, 161, .28) !important
+}
+
+.luxe-app .luxe-cart-head h2 small {
+    background: #f3c4ce !important
+}
+
+.luxe-app .luxe-empty svg {
+    color: #f3c4ce !important
+}
+
+.luxe-app .hero__rule,
+.luxe-app .hero__dot.is-active {
+    background: #f0c0ca !important
+}
+
+.luxe-app .hero .eyebrow,
+.luxe-app .hero__scroll span {
+    color: #f0c0ca !important
+}
+
+.luxe-app .luxe-concierge .eyebrow {
+    color: #f0c0ca !important
+}
+
+.luxe-app .luxe-concierge .luxe-btn-light:hover {
+    background: #f0c0ca !important;
+    border-color: #f0c0ca !important
+}
+
+.luxe-app .why-luxe-intro h2 em {
+    color: #f3c4ce !important
+}
+
+.luxe-app .why-luxe-intro .eyebrow {
+    color: #f0c0ca !important
+}
+
+.luxe-app .benefit-icon {
+    border-color: rgba(243, 196, 206, .45) !important;
+    color: #f3c4ce !important
+}
+
+.luxe-app .review-card:before {
+    background: #f3c4ce !important
+}
+
+.luxe-app .review-stars {
+    color: #f3c4ce !important
+}
+
+.luxe-app .review-quote {
+    color: #f3c4ce !important
+}
+
+.luxe-app .review-author>span {
+    color: #f3c4ce !important
+}
+
+.luxe-app .review-pagination button.is-active {
+    background: #f3c4ce !important
+}
+
+.luxe-app .review-pagination button {
+    background: #111 !important
+}
+
+.luxe-app .center-action .outline-btn:hover,
+.luxe-app .recommend-section .text-link:hover {
+    background: #d98fa1 !important;
+    border-color: #d98fa1 !important
+}
