@@ -1,0 +1,4 @@
+/* LUXÉ HAIR brand lockup */
+.luxe-app .luxe-logo{display:block;width:118px;height:48px;flex:0 0 118px;overflow:hidden;font-size:0!important;background:url('/brand/luxe-wordmark.svg') center/contain no-repeat}
+.luxe-app .luxe-logo span{display:none!important}
+@media(max-width:800px){.luxe-app .luxe-logo{width:96px;height:40px;flex-basis:96px}}
