@@ -11,19 +11,16 @@
     align-items: stretch !important;
     width: max-content !important;
     gap: 14px !important;
-    animation: luxeWigMarqueeRight 34s linear infinite !important;
+    animation: luxeWigMarqueeRight 34s linear infinite;
     will-change: transform !important
 }
 
-.luxe-app .recommend-marquee:hover .recommend-marquee-track {
-    animation-play-state: paused !important
-}
 
 .luxe-app .recommend-marquee .recommend-card {
-    display: block !important;
-    flex: 0 0 clamp(185px, 17vw, 235px) !important;
-    width: clamp(185px, 17vw, 235px) !important;
-    min-width: clamp(185px, 17vw, 235px) !important
+    display: block ;
+    flex: 0 0 clamp(185px, 17vw, 235px);
+    width: clamp(185px, 17vw, 235px) ;
+    min-width: clamp(185px, 17vw, 235px)
 }
 
 .luxe-app .recommend-marquee .recommend-media {
@@ -59,14 +56,23 @@
 @media(max-width:600px) {
     .luxe-app .recommend-marquee-track {
         gap: 12px !important;
-        animation-duration: 28s !important
+        animation-duration: 25s
     }
 
     .luxe-app .recommend-marquee .recommend-card {
         flex-basis: 155px !important;
         width: 155px !important;
+        justify-content: space-between;
+        gap: .9rem;
         min-width: 155px !important
     }
+    .recommend-marquee .recommend-card:hover{
+        box-shadow: none;
+    }
+    .luxe-app .recommend-marquee .recommend-copy{
+        padding-top: .1px !important;
+    }
+
 
     .luxe-app .recommend-marquee .recommend-media {
         aspect-ratio: .82 !important
@@ -137,7 +143,7 @@
     }
 }
 
-/* Mobile menu location — make Lagos, Nigeria feel like part of the navigation */
+
 .luxe-app .luxe-mobile-menu .luxe-mobile-location {
     display: flex !important;
     flex-direction: column !important;

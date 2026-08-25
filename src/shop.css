@@ -8,7 +8,7 @@
     --bronze: #8c6d46;
     background: var(--cream);
     color: var(--espresso);
-    font-family: Inter, system-ui, sans-serif
+    font-family: "Inter", system-ui, sans-serif
 }
 
 .luxe-app * {
